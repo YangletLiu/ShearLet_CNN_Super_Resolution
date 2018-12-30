@@ -22,5 +22,6 @@ if img_num>0
 %         figure;imshow(im);
 %         figure;imshow(im1);
 %         figure;imshow(im2);
+%         figure;imshow(im3);
     end
 end
