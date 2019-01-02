@@ -2,14 +2,14 @@ clear;close all;
 clc;clear;
 addpath(genpath(cd));
 %% settings
-folder = 'Train\BSDS500';
+folder = 'Test\BSDS500';
 
 DST_scale = 1;  %shearlet分解的scale
 Num_shrlt = 9;  %在以上scale下得到的shearlet个数
 
 Savepath = cell(Num_shrlt,1);
 for j = 1:Num_shrlt
-    Savepath{j} = ['train_',num2str(j),'.h5'];
+    Savepath{j} = ['test_',num2str(j),'.h5'];
 end
 
 size_input = 96; %网络输入图像块的大小
@@ -49,13 +49,12 @@ for i = 1 : length(filepaths)
     
     %     im_input = imresize(imresize(im_gnd, 1/scale, 'bicubic'),[hei,wid],'bicubic');    %网络输入
     
-    im_LR = imresize(im_gnd, 1/scale, 'bicubic');       %图像变小
-    im_bic = imresize(im_LR,scale,'bicubic');
+    im_LR = imresize(im_gnd, 1/scale, 'bicubic');
     
-    [coeffs_DST_LR,~] = DSTImgDec(im_bic,DST_scale);     %对小图像做DST
-    im_input = coeffs_DST_LR(:,:,9);     %对DST系数插值，作为网络输入
+    [coeffs_DST_LR,~] = DSTImgDec(im_LR,DST_scale);
+    im_input = imresize(coeffs_DST_LR(:,:,9),scale,'bicubic');
     
-    [coeffs_DST_gnd,~] = DSTImgDec(im_gnd,DST_scale);   %对gnd图像做DST，作为网络label
+    [coeffs_DST_gnd,~] = DSTImgDec(im_gnd,DST_scale);
     
     
     for x = 1 : stride : hei-size_input+1
@@ -80,7 +79,7 @@ end
 
 
 %% writing to HDF5
-chunksz = 32;
+chunksz = 2;
 created_flag = false;
 totalct = 0;
 
