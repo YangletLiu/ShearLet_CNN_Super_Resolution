@@ -1,0 +1,22 @@
+# The train/test net protocol buffer definition
+net: "/home/tensor/Desktop/Gengtianyu/ShearletCNN_train/v3.7/TrainCaffe_HF/SRCNN_net.prototxt"
+type: "Adam"
+test_iter: 1
+# Carry out testing every 200 training iterations.
+test_interval: 20
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.001
+momentum: 0.95
+weight_decay: 0.0001
+# The learning rate policy
+lr_policy: "fixed"
+# Display every 105 iterations
+display: 200
+# The maximum number of iterations
+max_iter: 40000
+# snapshot intermediate results
+snapshot: 500
+snapshot_prefix: "/home/tensor/Desktop/Gengtianyu/ShearletCNN_train/v3.7/models_DST_v37HF"
+# solver mode: CPU or GPU
+solver_mode: GPU
+device_id: 1

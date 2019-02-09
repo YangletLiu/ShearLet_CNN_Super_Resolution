@@ -1,0 +1,22 @@
+# The train/test net protocol buffer definition
+net: "SRCNN_net.prototxt"
+type: "Adam"
+test_iter: 90
+# Carry out testing every 200 training iterations.
+test_interval: 185
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.001
+momentum: 0.95
+weight_decay: 0.0001
+# The learning rate policy
+lr_policy: "fixed"
+# Display every 105 iterations
+display: 500
+# The maximum number of iterations
+max_iter: 100000
+# snapshot intermediate results
+snapshot: 2000
+snapshot_prefix: "models_DST_v3.3"
+# solver mode: CPU or GPU
+solver_mode: GPU
+device_id: 1
