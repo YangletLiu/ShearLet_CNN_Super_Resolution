@@ -22,3 +22,16 @@ Use demo_SR_image.m to test the trained CNNs.
 Dataset:
 
 The network is trained on BSDS500 dataset and some drone images found on the internet
+
+
+程序包说明：
+
+ShearletCNN_train_v3.3：不再是分别训练9个DST系数，而是将9个系数堆叠为三维张量进行训练，即原本需要训练9个网络，而现在需要训练一个网络。
+
+ShearletCNN_v3.5：不再是将9个系数堆叠为三维张量，而是将前8个高频分量作为一个张量进行训练，第9个低频分量再进行训练。
+
+ShearletCNN_v3.6：先将coeffs用shearletSystem.RMS进行标准化，再作为input和label，其余继承自v3.3。
+
+ShearletCNN_train_v3.3.1：不是将bic_HR图像的DST系数作为输入，而是将bic_HR图像本身作为输入，其余继承自v3.3。
+
+ShearletCNN_v3.7：结合v3.5和v3.6，双路径的同时，分别用shearletSystem.RMS进行标准化。
