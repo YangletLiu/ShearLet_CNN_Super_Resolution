@@ -1,0 +1,10 @@
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train1.h5
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train2.h5
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train3.h5
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train4.h5
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train5.h5
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train6.h5
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train7.h5
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train8.h5
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train9.h5
+/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/SDRN_v2.1/Train/train10.h5

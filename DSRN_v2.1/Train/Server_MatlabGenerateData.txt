@@ -1,0 +1,3 @@
+nohup matlab <generate_train.m> MatlabGenerateData.out 2>&1 &
+
+nohup matlab <generate_test.m> MatlabGenerateData.out 2>&1 &

@@ -1,3 +1,9 @@
+DSRN_v2.1 is the last version.
+
+
+
+
+
 # ShearLet_CNN_Super_Resolution
 We combine shearlet with CNN in the application of image super-resolution.
 

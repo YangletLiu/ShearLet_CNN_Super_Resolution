@@ -1,0 +1,34 @@
+HDF5 test.h5 
+Group '/' 
+    Dataset 'data' 
+        Size:  41x41x9x914
+        MaxSize:  41x41x9xInf
+        Datatype:   H5T_IEEE_F32LE (single)
+        ChunkSize:  41x41x9x2
+        Filters:  none
+        FillValue:  0.000000
+    Dataset 'label' 
+        Size:  41x41x9x914
+        MaxSize:  41x41x9xInf
+        Datatype:   H5T_IEEE_F32LE (single)
+        ChunkSize:  41x41x9x2
+        Filters:  none
+        FillValue:  0.000000
+
+
+
+train1.h5
+41x41x9x76736
+
+train2.h5
+41x41x9x75776
+
+train3.h5
+41x41x9x76736
+
+train4.h5
+41x41x9x74368
+
+train5.h5
+41x41x9x71808
+

@@ -1,0 +1,8 @@
+sudo nohup sudo /home/tensor/Desktop/Gengtianyu/caffe/build/tools/caffe.bin train \
+--solver=/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SDRN_SR_v1/Train/SDRN_solver.prototxt \
+>> SDRN.out 2>&1 &
+
+
+
+# --snapshot=/home/tensor/Desktop/Gengtianyu/ShearletCNN_train/Denoise_v4.4.1/models_DnCNN_Ty_iter_2520.solverstate \
+# &

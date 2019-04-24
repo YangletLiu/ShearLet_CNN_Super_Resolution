@@ -1,0 +1,23 @@
+# The train/test net protocol buffer definition
+net: "/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/DSRN_v2.1/Train/DSRN_net.prototxt"
+type: "Adam"
+test_iter: 457
+# Carry out testing every 200 training iterations.
+test_interval: 500
+# The base learning rate, momentum and the weight decay of the network.
+#base_lr: 0.001
+#momentum: 0.95
+base_lr: 0.0001
+weight_decay: 0.0001
+# The learning rate policy
+lr_policy: "fixed"
+# Display every 105 iterations
+display: 100
+# The maximum number of iterations
+max_iter: 936560
+# snapshot intermediate results
+snapshot: 5000
+snapshot_prefix: "/home/tensor/Desktop/Gengtianyu/Geng_ShearletCNN/SR/DSRN_v2.1/Results/DSRN_v2.1"
+# solver mode: CPU or GPU
+solver_mode: GPU
+device_id: 1
